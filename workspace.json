@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "lists": "apps/lists",
-    "lists-e2e": "apps/lists-e2e"
+    "lists-e2e": "apps/e2e/lists-e2e",
+    "feature-lists": "libs/lists/feature-lists"
   }
 }
