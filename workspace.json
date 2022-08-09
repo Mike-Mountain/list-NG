@@ -2,8 +2,9 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "feature-lists": "libs/lists/feature-lists",
     "lists": "apps/lists",
     "lists-e2e": "apps/e2e/lists-e2e",
-    "feature-lists": "libs/lists/feature-lists"
+    "shared-ui": "libs/shared/ui"
   }
 }

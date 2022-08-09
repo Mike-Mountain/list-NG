@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@list-ng/lists/feature-lists": ["libs/lists/feature-lists/src/index.ts"]
+      "@list-ng/lists/feature-lists": ["libs/lists/feature-lists/src/index.ts"],
+      "@list-ng/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
