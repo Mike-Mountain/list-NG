@@ -40,6 +40,7 @@
     "@nrwl/linter": "14.5.4",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "14.5.4",
+    "@nx-extend/strapi": "^2.2.1",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
