@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@list-ng/lists/feature-lists": ["libs/lists/feature-lists/src/index.ts"],
+      "@list-ng/shared/data-access": ["libs/shared/data-access/src/index.ts"],
       "@list-ng/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },

@@ -5,6 +5,7 @@
     "feature-lists": "libs/lists/feature-lists",
     "lists": "apps/lists",
     "lists-e2e": "apps/e2e/lists-e2e",
+    "shared-data-access": "libs/shared/data-access",
     "shared-ui": "libs/shared/ui"
   }
 }
