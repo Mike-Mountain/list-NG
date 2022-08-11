@@ -3,7 +3,6 @@
   "version": 2,
   "projects": {
     "feature-lists": "libs/lists/feature-lists",
-    "list-api": "apps/list-api",
     "lists": "apps/lists",
     "lists-e2e": "apps/e2e/lists-e2e",
     "shared-ui": "libs/shared/ui"
