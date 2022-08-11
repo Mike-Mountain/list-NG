@@ -93,7 +93,8 @@
       },
       "defaultConfiguration": "local",
       "options": {
-        "port": 5000
+        "port": 5000,
+        "proxyConfig": "apps/lists/proxy.conf.json"
       }
     },
     "extract-i18n": {
