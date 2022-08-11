@@ -6,6 +6,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
+    "create-mocks": "node mocks/utils/merge-mocks.js",
+    "mock-server": "json-server mocks/merged/mocks.json --routes mocks/utils/routes.json --watch",
     "postinstall": "ngcc --properties es2020 browser module main"
   },
   "private": true,

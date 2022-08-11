@@ -13,7 +13,6 @@
         "polyfills": "apps/lists/src/polyfills.ts",
         "tsConfig": "apps/lists/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/lists/src/favicon.ico", "apps/lists/src/assets"],
         "styles": ["apps/lists/src/styles.scss"],
         "scripts": []
       },
@@ -31,24 +30,53 @@
               "maximumError": "4kb"
             }
           ],
-          "fileReplacements": [
+          "assets": [
+            "apps/lists/src/favicon.ico",
+            "apps/lists/src/assets",
             {
-              "replace": "apps/lists/src/environments/environment.ts",
-              "with": "apps/lists/src/environments/environment.prod.ts"
+              "glob": "**/*",
+              "input": "config/prod/",
+              "output": "config/"
             }
           ],
           "outputHashing": "all"
         },
-        "development": {
+        "dev": {
           "buildOptimizer": false,
           "optimization": false,
           "vendorChunk": true,
           "extractLicenses": false,
           "sourceMap": true,
-          "namedChunks": true
+          "namedChunks": true,
+          "assets": [
+            "apps/lists/src/favicon.ico",
+            "apps/lists/src/assets",
+            {
+              "glob": "**/*",
+              "input": "config/dev/",
+              "output": "config/"
+            }
+          ]
+        },
+        "local": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true,
+          "assets": [
+            "apps/lists/src/favicon.ico",
+            "apps/lists/src/assets",
+            {
+              "glob": "**/*",
+              "input": "config/local/",
+              "output": "config/"
+            }
+          ]
         }
       },
-      "defaultConfiguration": "production"
+      "defaultConfiguration": "local"
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
@@ -56,11 +84,14 @@
         "production": {
           "browserTarget": "lists:build:production"
         },
-        "development": {
-          "browserTarget": "lists:build:development"
+        "dev": {
+          "browserTarget": "lists:build:dev"
+        },
+        "local": {
+          "browserTarget": "lists:build:local"
         }
       },
-      "defaultConfiguration": "development",
+      "defaultConfiguration": "local",
       "options": {
         "port": 5000
       }

@@ -1,0 +1,24 @@
+{
+  "lists": [
+    {
+      "items": [
+        {
+          "title": "Milk",
+          "complete": false
+        },
+        {
+          "title": "Bread",
+          "complete": false
+        }
+      ],
+      "createdBy": {
+        "username": "Mike",
+        "email": "mikemountain.dev@gmail.com",
+        "groups": [1]
+      },
+      "createdOn": "Thu Aug 11 2022 12:24:27 GMT+0200 (South Africa Standard Time)",
+      "image": "https://ocdn.eu/images/pulscms/YmQ7MDA_/69a69ff5d10804f3cb12cb227c7a8455.jpg",
+      "group": 1
+    }
+  ]
+}

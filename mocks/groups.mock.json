@@ -1,0 +1,9 @@
+{
+  "groups": [
+    {
+      "name": "Family",
+      "users": [1],
+      "lists": [1, 2]
+    }
+  ]
+}
