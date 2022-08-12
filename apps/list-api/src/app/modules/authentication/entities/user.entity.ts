@@ -1,8 +1,10 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, ManyToMany, PrimaryColumn } from 'typeorm';
+import { Group } from '@list-ng/shared/data-access';
+import { GroupsEntity } from '../../groups/entities/groups.entity';
 
-@Entity()
+@Entity('users')
 export class UserEntity {
-  @PrimaryGeneratedColumn()
+  @PrimaryColumn()
   id: number;
 
   @Column()
@@ -10,4 +12,7 @@ export class UserEntity {
 
   @Column()
   email: string;
+
+  @ManyToMany((type) => GroupsEntity, (group) => group.users)
+  groups: Group[];
 }

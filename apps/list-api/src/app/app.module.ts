@@ -5,20 +5,21 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthenticationModule } from './modules/authentication/authentication.module';
 import { UserEntity } from './modules/authentication/entities/user.entity';
+import { GroupsModule } from './modules/groups/groups.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
-      port: 5432,
-      username: 'postgres',
-      password: 'redant09',
-      database: 'lists_db',
+      username: 'root',
+      password: 'OrangeInsect09',
+      database: 'lists_ng',
       entities: [UserEntity],
       synchronize: false,
     }),
     AuthenticationModule,
+    GroupsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
